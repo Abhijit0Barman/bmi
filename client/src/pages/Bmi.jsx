@@ -25,7 +25,7 @@ export const Bmi = () => {
       return
     }
     try {
-      const res=await axios.post("http://localhost:8080/calculateBMI",{height,weight})
+      const res=await axios.post("https://bmi-9fe8.onrender.com/calculateBMI",{height,weight})
       const data =res.data
       setBmi(data)
     } catch (err) {
