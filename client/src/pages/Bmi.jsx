@@ -38,7 +38,7 @@ export const Bmi = () => {
 
   const getBmi = (obj) => {
     axios
-      .post("http://localhost:8080/calculateBMI", obj)
+      .post("https://bmi-9fe8.onrender.com/calculateBMI", obj)
       .then((res) => {
         setBmi(res.data);
         console.log(res.data);
